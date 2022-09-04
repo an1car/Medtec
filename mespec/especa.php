@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="pt"><head>
+<html style="font-size: 16px;" lang="pt-br"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="">
@@ -22,7 +22,7 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <img class="u-image u-image-round u-radius-20 u-image-1" src="../css/images/Imagem31.png" alt="" data-image-width="451" data-image-height="384">
         <h5 class="u-text u-text-default u-text-1">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-active-palette-4-light-1 u-text-black u-text-hover-palette-4-base u-btn-1" href="../medicos/joaobarbosa.html">JOÃO BARBOSA</a>
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-active-palette-4-light-1 u-text-black u-text-hover-palette-4-base u-btn-1" href="../medicos/joaobarbosa.php">JOÃO BARBOSA</a>
         </h5>
         <a href="https://clinicas/hapvida" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-none u-text-active-palette-4-light-1 u-text-body-color u-text-hover-palette-4-base u-btn-2">HAPVIDA</a>
         <p class="u-text u-text-default u-text-2">5,0</p><span class="u-file-icon u-icon u-icon-1"><img src="../css/images/3303088.png" alt=""></span>

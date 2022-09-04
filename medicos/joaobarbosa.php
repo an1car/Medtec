@@ -1,5 +1,29 @@
+
+<?php
+include "../class/Consulta.php";
+
+
+$get_consulta = Consulta::GetConsulta();
+
+
+foreach( $get_consulta as $row){
+?>
+<tbody>
+    <tr class = "text-center">
+    <td><?php echo($row["inicio"])."<br>"; ?></td>
+    <td><?php echo ($row["previsaoTermino"])."<br>"; ?></td>
+    <td><?php echo($row["data"])."<br>"; ?></td>
+    <td><?php echo($row["preco"])."<br>"; ?></td>
+    <td><?php echo($row["disponivel"])."<br>"; ?></td>
+
+    </tr>
+</tbody>
+<?php
+}
+?>
+
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="pt"><head>
+<html style="font-size: 16px;" lang="pt-br"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="">
