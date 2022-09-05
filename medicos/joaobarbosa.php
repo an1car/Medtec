@@ -32,7 +32,7 @@ foreach( $get_consulta as $row){
     <link rel="stylesheet" href="../css/mycss.css" media="screen">
     <link rel="stylesheet" href="../css/joaobarbosa.css" media="screen">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    <script class="u-script" type="text/javascript" src="popup.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="JS/popup.js" defer=""></script>
 
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Contato">
