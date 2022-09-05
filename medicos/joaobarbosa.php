@@ -32,7 +32,8 @@ foreach( $get_consulta as $row){
     <link rel="stylesheet" href="../css/mycss.css" media="screen">
     <link rel="stylesheet" href="../css/joaobarbosa.css" media="screen">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    
+    <script class="u-script" type="text/javascript" src="popup.js" defer=""></script>
+
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Contato">
     <meta property="og:type" content="website">
@@ -47,14 +48,34 @@ foreach( $get_consulta as $row){
         </div>
       </div>
     </section>
+    <!-- INFORMAÇÕES DO MÉDICO -->
     <section class="u-clearfix u-section-2" id="sec-e9d5">
       <div class="u-clearfix u-sheet u-sheet-1">
         <img class="u-image u-image-round u-radius-30 u-image-1" src="../css/images/Imagem31.png" alt="" data-image-width="451" data-image-height="384">
-        <a href="contratar.html" data-page-id="821229681" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-palette-1-light-1 u-radius-20 u-btn-1">CONTRATAR</a>
+        <button data-page-id="821229681" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-palette-1-light-1 u-radius-20 u-btn-1">CONTRATAR</button>
         <h6 class="u-text u-text-default u-text-1">JOÃO BARBOSA</h6>
         <img class="u-image u-image-round u-radius-20 u-image-2" src="../css/images/Imagem18.png" alt="" data-image-width="1174" data-image-height="1536">
         <img class="u-image u-image-round u-radius-20 u-image-3" src="../css/images/Imagem19.png" alt="" data-image-width="1515" data-image-height="1600">
       </div>
     </section>
+    <!-- POP-UP DE HORÁRIOS -->
+  <div class="popup-wrapper">
+    <div class="popup">
+      <div class="popup-close">X</div>
+      <div class="popup-content"></div>
+              <!--HORÁRIO DISPONÍVEIS NO BANCO DE DADOS  -->
+        <center><buttonA data-page-id="821229681" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-palette-1-light-1 u-radius-20 u-btn-1">Marcar Consulta</buttonA>
+    </div>
+  </div>
+    <!-- DEVERIA SER O POP-UP DE CONFIRMAR CONCULTAS -->
+  <div class="popup-wrapperA">
+    <div class="popupA">
+      <div class="popup-closeA">X</div>
+      <div class="popup-contentA"></div>
+        <h2>Forma de pagamento: Cartão de Crédito: Final 3232</h2><br/>
+        <p>Data da consulta: 15 de setembro de 2022 / 14 horas</p><br/>
+        <button>CONFIRMAR</button>
+    </div>
+  </div>
   
 </body></html>
