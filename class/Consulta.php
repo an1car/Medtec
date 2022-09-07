@@ -10,7 +10,7 @@ class Consulta{
             return $db->Query("SELECT * FROM consulta WHERE disponivel = 1");
     
         }
-    public static function CancelaConsulta($id){
+    public static function Marcar($id){
 
             $db = new DataBase(BANCODEDADOS, USUARIO, SENHA, SERVIDOR);
     
@@ -18,6 +18,23 @@ class Consulta{
     
             return $db->SqlDml($sql);
     }
+
+    public static function GetConsultaMarcadas(){
+    
+        $db = new DataBase(BANCODEDADOS, USUARIO, SENHA, SERVIDOR);
+
+
+        return $db->Query("SELECT * FROM consulta WHERE disponivel = 0");
+
+    }
+public static function CancelarConsulta($id){
+
+        $db = new DataBase(BANCODEDADOS, USUARIO, SENHA, SERVIDOR);
+
+        $sql = "UPDATE consulta SET disponivel = 1 WHERE id = $id ";
+
+        return $db->SqlDml($sql);
+}
 
     
     }

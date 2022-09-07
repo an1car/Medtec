@@ -2,8 +2,9 @@
 <?php
 include "../class/Consulta.php";
 
-
 $get_consulta = Consulta::GetConsulta();
+$get_consultaMarcadas = Consulta::GetConsultaMarcadas();
+
 
 ?>
 
@@ -51,32 +52,40 @@ $get_consulta = Consulta::GetConsulta();
       <div class="popup-content"></div>
       <h2>HORÁRIOS DISPONÍVEIS</h2>
               <!--HORÁRIO DISPONÍVEIS NO BANCO DE DADOS  -->
-              <center><form action="joaobarbosa.php" method="POST">
-                      <?php
-                        foreach( $get_consulta as $row){
-                        ?>
-                          <?php
-                            if($row["disponivel"] == 1){
-                            ?>
-                        
-                        <ul id="abcde">
-                          <li>Inicio: <?php echo($row["inicio"])."<br>"; ?>H</li>
-                          <li>Previsao de Termino: <?php echo ($row["previsaoTermino"])."<br>"; ?>H</li>
-                          <li>Data: <?php echo($row["data"])."<br>"; ?></li>
-                          <li> Valor da Consulta: R$<?php echo($row["preco"])."<br>"; ?></li>
-                        </ul>
-                        <buttonA><input type="button" value="Marcar Consulta" data-page-id="821229681" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-palette-1-light-1 u-radius-20 u-btn-1"></buttonA>
+              <?php
+                while ($row = $get_consulta->fetch()) {
+                ?>
+            <tbody>
+                <tr class = "text-center">
+                <td>Inicio: <?php echo($row["inicio"])."H<br>"; ?></td>
+                <td>Data: <?php echo($row["data"])."<br>"; ?></td>
+                <td>Valor da Consulta: R$<?php echo($row["preco"])."<br>"; ?></td>
+                <td>    
+                <a href="MarcarConsulta.php?id=<?php echo($row["id"]); ?>" id="marcarConsulta"><buttonA data-page-id="821229681" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-palette-1-light-1 u-radius-20 u-btn-1">Marcar Consulta</buttonA></a>      
+                </td>
+                </tr>
+            </tbody>
+        <?php
+            } ?>
+            <!-- CancelarConsulta -->
+            <?php
+                while ($row = $get_consultaMarcadas->fetch()) {
+                ?>
+            <tbody>
+                <tr class = "text-center">
+                <td>Inicio: <?php echo($row["inicio"])."H<br>"; ?></td>
+                <td>Data: <?php echo($row["data"])."<br>"; ?></td>
+                <td>Valor da Consulta: R$<?php echo($row["preco"])."<br>"; ?></td>
+                <td>    
+                <a href="CancelarConsulta.php?id=<?php echo($row["id"]); ?>" id="CancelarConsulta" data-page-id="821229681" class="u-border-none u-btn u-custom-color-1 u-hover-palette-1-light-1 u-radius-20 u-btn-1">Cancelar Consulta</a>      
+                </td>
+                </tr>
+            </tbody>
+        <?php
+            } ?>
 
-                          <!-- <center><buttonA data-page-id="821229681" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-palette-1-light-1 u-radius-20 u-btn-1">Marcar Consulta -->
-
-                          
-                            <?php
-                          }
-                          ?>
-                        <?php
-                        }
-                        ?>
-              </form></center>
+  
+             
     </div>
   </div>
     <!-- DEVERIA SER O POP-UP DE CONFIRMAR CONCULTAS -->

@@ -137,10 +137,6 @@
   
 }
 
-.popup ul li{
-  list-style-type: none;
-
-}
 /* .popup form{
   
   overflow-x: hidden;
@@ -150,13 +146,13 @@
 } */
 
 
-.popup a {
+/* .popup a {
   color: white;
   border: 0;
   cursor: pointer;
   padding: 6px 10px;
   background: rgb(1, 75, 1);
-}
+} */
 
 .popup-close{
   color: red;
@@ -208,4 +204,8 @@
   right: 10px;
   cursor: pointer;
 
+}
+#marcarConsulta{
+  display: inline;
+  text-align: center;
 }
