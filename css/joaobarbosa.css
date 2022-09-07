@@ -134,7 +134,21 @@
   padding: 20px;
   background-color: rgb(224, 195, 157);
   position: relative;
+  
 }
+
+.popup ul li{
+  list-style-type: none;
+
+}
+/* .popup form{
+  
+  overflow-x: hidden;
+  overflow-y: scroll;
+  white-space: nowrap;
+  
+} */
+
 
 .popup a {
   color: white;

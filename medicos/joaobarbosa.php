@@ -5,22 +5,8 @@ include "../class/Consulta.php";
 
 $get_consulta = Consulta::GetConsulta();
 
-
-foreach( $get_consulta as $row){
 ?>
-<tbody>
-    <tr class = "text-center">
-    <td><?php echo($row["inicio"])."<br>"; ?></td>
-    <td><?php echo ($row["previsaoTermino"])."<br>"; ?></td>
-    <td><?php echo($row["data"])."<br>"; ?></td>
-    <td><?php echo($row["preco"])."<br>"; ?></td>
-    <td><?php echo($row["disponivel"])."<br>"; ?></td>
 
-    </tr>
-</tbody>
-<?php
-}
-?>
 
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="pt-br"><head>
@@ -65,7 +51,32 @@ foreach( $get_consulta as $row){
       <div class="popup-content"></div>
       <h2>HORÁRIOS DISPONÍVEIS</h2>
               <!--HORÁRIO DISPONÍVEIS NO BANCO DE DADOS  -->
-        <center><buttonA data-page-id="821229681" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-palette-1-light-1 u-radius-20 u-btn-1">Marcar Consulta</buttonA>
+              <center><form action="joaobarbosa.php" method="POST">
+                      <?php
+                        foreach( $get_consulta as $row){
+                        ?>
+                          <?php
+                            if($row["disponivel"] == 1){
+                            ?>
+                        
+                        <ul id="abcde">
+                          <li>Inicio: <?php echo($row["inicio"])."<br>"; ?>H</li>
+                          <li>Previsao de Termino: <?php echo ($row["previsaoTermino"])."<br>"; ?>H</li>
+                          <li>Data: <?php echo($row["data"])."<br>"; ?></li>
+                          <li> Valor da Consulta: R$<?php echo($row["preco"])."<br>"; ?></li>
+                        </ul>
+                        <buttonA><input type="button" value="Marcar Consulta" data-page-id="821229681" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-palette-1-light-1 u-radius-20 u-btn-1"></buttonA>
+
+                          <!-- <center><buttonA data-page-id="821229681" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-palette-1-light-1 u-radius-20 u-btn-1">Marcar Consulta -->
+
+                          
+                            <?php
+                          }
+                          ?>
+                        <?php
+                        }
+                        ?>
+              </form></center>
     </div>
   </div>
     <!-- DEVERIA SER O POP-UP DE CONFIRMAR CONCULTAS -->

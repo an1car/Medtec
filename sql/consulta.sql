@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04-Set-2022 às 19:41
+-- Tempo de geração: 07-Set-2022 às 16:24
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 7.4.29
 
@@ -41,7 +41,9 @@ CREATE TABLE `consulta` (
 --
 
 INSERT INTO `consulta` (`id`, `inicio`, `previsaoTermino`, `data`, `preco`, `disponivel`) VALUES
-(1, '10:00:00', '11:00:00', '0000-00-00', 1000, 1);
+(1, '10:00:00', '11:00:00', '2022-01-23', 1000, 1),
+(2, '12:00:00', '13:30:00', '2022-09-07', 50, 1),
+(3, '14:11:00', '15:41:00', '2022-09-10', 123, 1);
 
 --
 -- Índices para tabelas despejadas
@@ -61,7 +63,7 @@ ALTER TABLE `consulta`
 -- AUTO_INCREMENT de tabela `consulta`
 --
 ALTER TABLE `consulta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
