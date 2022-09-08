@@ -129,30 +129,20 @@
   text-transform: uppercase;
   text-align: center;
   width: 100%;
-  max-width: 300px;
-  margin: 10% auto;
-  padding: 20px;
+  max-width: 50%;
+  margin: 5% auto;
+  padding: 5px;
   background-color: rgb(224, 195, 157);
   position: relative;
-  
 }
 
-/* .popup form{
-  
-  overflow-x: hidden;
-  overflow-y: scroll;
-  white-space: nowrap;
-  
-} */
-
-
-/* .popup a {
+.popup a {
   color: white;
   border: 0;
   cursor: pointer;
   padding: 6px 10px;
   background: rgb(1, 75, 1);
-} */
+}
 
 .popup-close{
   color: red;
@@ -161,51 +151,4 @@
   right: 20px;
   cursor: pointer;
 
-}
-
-/* DEVERIA SER POP-UP DE CONFIRMAR CONSULTA */
-
-*A {
-  box-sizing: border-box;
-}
-
-.popup-wrapperA{
-  display: none;
-  background: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-}
-.popupA {
-  font-family: Arial;
-  text-align: center;
-  width: 100%;
-  max-width: 300px;
-  margin: 10% auto;
-  padding: 20px;
-  background-color: rgb(224, 195, 157);
-  position: relative;
-}
-
-.popupA a {
-  color: white;
-  border: 0;
-  cursor: pointer;
-  padding: 6px 10px;
-  background: rgb(1, 75, 1);
-}
-
-.popup-closeA{
-  color: red;
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  cursor: pointer;
-
-}
-#marcarConsulta{
-  display: inline;
-  text-align: center;
 }
