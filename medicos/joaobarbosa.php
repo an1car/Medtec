@@ -50,6 +50,13 @@ $get_consultaMarcadas = Consulta::GetConsultaMarcadas();
     <div class="popup">
       <div class="popup-close">X</div>
       <div class="popup-content"></div>
+        <h2></br>SELECIONE A FORMA DE PAGAMENTO</h2>
+          <center><select name="select" class="u-btn u-btn-round u-button-style u-custom-color-1 u-hover-palette-1-light-1 u-radius-20 u-btn-1">
+            <option value="valor0">Selecione forma de pagamento</option> 
+            <option value="valor1">Boleto</option>
+            <option value="valor2">Cartão de Crédito</option>
+            <option value="valor3">Cartão de Débito</option>
+          </select>
       <h2>HORÁRIOS DISPONÍVEIS</h2>
               <!--HORÁRIO DISPONÍVEIS NO BANCO DE DADOS  -->
               <?php
