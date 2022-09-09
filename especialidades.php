@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="pt-br"><head>
+<html style="font-size: 16px;" lang="pt-br">
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="MEDTEC">
     <meta name="description" content="">
     <title>Especialidades</title>
-    <link rel="stylesheet" href="../css/mycss.css" media="screen">
-    <link rel="stylesheet" href="../css/especialidades.css" media="screen">
-    
+    <link rel="stylesheet" href="css/mycss.css" media="screen">
+    <link rel="stylesheet" href="css/especialidades.css" media="screen">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Página Inicial">
     <meta property="og:type" content="website">
   </head>
   <body class="u-body u-xl-mode" data-lang="pt">
+    <!-- CABEÇALHO -->
     <section class="u-clearfix u-image u-section-1" id="sec-be78" data-image-width="1920" data-image-height="599">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-default u-image-1" src="../css/images/perfil.png" alt="" data-image-width="531" data-image-height="317" data-href="perfil.html">
-        <img class="u-image u-image-default u-image-2" src="../css/images/logo18.png" alt="" data-image-width="453" data-image-height="406">
+        <img class="u-image u-image-default u-image-1" src="css/images/perfil.png" alt="" data-image-width="531" data-image-height="317" data-href="perfil.html">
+        <img class="u-image u-image-default u-image-2" src="css/images/logo18.png" alt="" data-image-width="453" data-image-height="406">
       </div>
     </section>
+    <!-- CARROSSEL DE IMAGENS PARA ESCOLHA DE ESPECIALIDADES -->
     <section class="u-clearfix u-section-2" id="sec-82e4">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-round u-radius-38 u-image-1" src="../css/images/espec.png" alt="" data-image-width="1046" data-image-height="171">
-       <a href="especa.html"><img class="u-hover-feature u-image u-image-round u-radius-6 u-image-2" src="../css/images/Imagem5.png" alt="" data-image-width="773" data-image-height="719"></a>
-       <a href="medicosb.html"><img class="u-hover-feature u-image u-image-round u-radius-6 u-image-3" src="../css/images/Imagem7.png" alt="" data-image-width="773" data-image-height="719"></a>
-       <a href="especa.html"><img class="u-hover-feature u-image u-image-round u-radius-6 u-image-4" src="../css/images/Imagem6.png" alt="" data-image-width="773" data-image-height="719"></a>
-       <a href="medicosd.html"><img class="u-hover-feature u-image u-image-round u-radius-6 u-image-5" src="../css/images/Imagem8.png" alt="" data-image-width="773" data-image-height="719"></a>
-       <a href="medicose.html"><img class="u-hover-feature u-image u-image-round u-radius-6 u-image-6" src="../css/images/Imagem9.png" alt="" data-image-width="773" data-image-height="719"></a>
-       <a href="medicosf.html"><img class="u-hover-feature u-image u-image-round u-radius-6 u-image-7" src="../css/images/Imagem10.png" alt="" data-image-width="773" data-image-height="719"></a>
+        <img class="u-image u-image-round u-radius-38 u-image-1" src="css/images/espec.png" alt="" data-image-width="1046" data-image-height="171">
+          <a href="mespec/especa.php"><img class="u-hover-feature u-image u-image-round u-radius-6 u-image-2" src="css/images/Imagem5.png" alt="" data-image-width="773" data-image-height="719"></a>
+          <a href="medicosb.html"><img class="u-hover-feature u-image u-image-round u-radius-6 u-image-3" src="css/images/Imagem7.png" alt="" data-image-width="773" data-image-height="719"></a>
+          <a href="mespec/especa.php"><img class="u-hover-feature u-image u-image-round u-radius-6 u-image-4" src="css/images/Imagem6.png" alt="" data-image-width="773" data-image-height="719"></a>
+          <a href="medicosd.html"><img class="u-hover-feature u-image u-image-round u-radius-6 u-image-5" src="css/images/Imagem8.png" alt="" data-image-width="773" data-image-height="719"></a>
+          <a href="medicose.html"><img class="u-hover-feature u-image u-image-round u-radius-6 u-image-6" src="css/images/Imagem9.png" alt="" data-image-width="773" data-image-height="719"></a>
+          <a href="medicosf.html"><img class="u-hover-feature u-image u-image-round u-radius-6 u-image-7" src="css/images/Imagem10.png" alt="" data-image-width="773" data-image-height="719"></a>
       </div>
-      
-      
     </section>
+    <!-- RODAPÉ -->
     <section class="u-clearfix u-gradient u-section-3" id="sec-17ef">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -46,7 +46,7 @@
                 </div>
               </div>
               <div class="u-align-right u-container-style u-layout-cell u-right-cell u-size-27 u-layout-cell-2">
-                <div class="u-container-layout u-container-layout-2">
+                 <div class="u-container-layout u-container-layout-2">
                   <div class="u-social-icons u-spacing-20 u-social-icons-1">
                     <a class="u-social-url" title="facebook" target="_blank" href="https://facebook.com/name"><span class="u-icon u-social-facebook u-social-icon u-text-white u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5e9f"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" id="svg-5e9f"><path d="m512 256c0-141.4-114.6-256-256-256s-256 114.6-256 256 114.6 256 256 256c1.5 0 3 0 4.5-.1v-199.2h-55v-64.1h55v-47.2c0-54.7 33.4-84.5 82.2-84.5 23.4 0 43.5 1.7 49.3 2.5v57.2h-33.6c-26.5 0-31.7 12.6-31.7 31.1v40.8h63.5l-8.3 64.1h-55.2v189.5c107-30.7 185.3-129.2 185.3-246.1z"></path></svg></span>
                     </a>
@@ -65,5 +65,4 @@
         </div>
       </div>
     </section>
-  
 </body></html>
